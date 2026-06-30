@@ -14,19 +14,21 @@ import java.util.List;
 // Cuando tus compañeros la usen, cambiarán la T por Categoria, Producto, etc.
 public interface IBaseDAO<T> {
 
+
     // Método para insertar un nuevo registro en la base de datos
-    void crear(T entidad);
+    public void crear(T entidad);
 
     // Método para buscar un registro específico por su ID
-    T obtenerPorId(Long id);
+    public T obtenerPorId(Long id);
 
     // Método para traer todos los registros (que no estén eliminados)
-    List<T> listarTodos();
+    public List<T> listarTodos();
 
     // Método para guardar los cambios de un registro existente
-    void actualizar(T entidad);
+    public void actualizar(T entidad);
 
     // Método para hacer la baja lógica (cambiar eliminado = true)
-    void eliminar(Long id);
+    public void eliminar(Long id);
+
 
 }
