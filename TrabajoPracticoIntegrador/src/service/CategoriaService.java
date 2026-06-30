@@ -4,7 +4,10 @@
  */
 package service;
 
+import entities.Categoria;
+import entities.Producto;
 import exception.EntidadNoEncontradaException;
+import exception.ValidacionException;
 
 import java.util.ArrayList;
 import java.util.List;
