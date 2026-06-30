@@ -14,6 +14,7 @@ import java.util.List;
 // Cuando tus compañeros la usen, cambiarán la T por Categoria, Producto, etc.
 public interface IBaseDAO<T> {
 
+
     // Método para insertar un nuevo registro en la base de datos
     public void crear(T entidad);
 
@@ -28,5 +29,6 @@ public interface IBaseDAO<T> {
 
     // Método para hacer la baja lógica (cambiar eliminado = true)
     public void eliminar(Long id);
+
 
 }
